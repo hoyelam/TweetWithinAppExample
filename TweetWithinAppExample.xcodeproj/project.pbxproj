@@ -14,6 +14,8 @@
 		17F6249528BA55940036DE0E /* TweetWithinAppExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F6249428BA55940036DE0E /* TweetWithinAppExampleTests.swift */; };
 		17F6249F28BA55940036DE0E /* TweetWithinAppExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F6249E28BA55940036DE0E /* TweetWithinAppExampleUITests.swift */; };
 		17F624A128BA55940036DE0E /* TweetWithinAppExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F624A028BA55940036DE0E /* TweetWithinAppExampleUITestsLaunchTests.swift */; };
+		17F624AE28BA56AC0036DE0E /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F624AD28BA56AC0036DE0E /* TweetService.swift */; };
+		17F624B028BA5A570036DE0E /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F624AF28BA5A570036DE0E /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		17F6249A28BA55940036DE0E /* TweetWithinAppExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetWithinAppExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F6249E28BA55940036DE0E /* TweetWithinAppExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetWithinAppExampleUITests.swift; sourceTree = "<group>"; };
 		17F624A028BA55940036DE0E /* TweetWithinAppExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetWithinAppExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		17F624AD28BA56AC0036DE0E /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
+		17F624AF28BA5A570036DE0E /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				17F6248328BA55930036DE0E /* TweetWithinAppExampleApp.swift */,
+				17F624AD28BA56AC0036DE0E /* TweetService.swift */,
 				17F6248528BA55930036DE0E /* ContentView.swift */,
 				17F6248728BA55940036DE0E /* Assets.xcassets */,
 				17F6248928BA55940036DE0E /* Preview Content */,
+				17F624AF28BA5A570036DE0E /* ContentViewModel.swift */,
 			);
 			path = TweetWithinAppExample;
 			sourceTree = "<group>";
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F624B028BA5A570036DE0E /* ContentViewModel.swift in Sources */,
 				17F6248628BA55930036DE0E /* ContentView.swift in Sources */,
 				17F6248428BA55930036DE0E /* TweetWithinAppExampleApp.swift in Sources */,
+				17F624AE28BA56AC0036DE0E /* TweetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TweetWithinAppExample/Preview Content\"";
+				DEVELOPMENT_TEAM = P6D2V789F7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TweetWithinAppExample/Preview Content\"";
+				DEVELOPMENT_TEAM = P6D2V789F7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

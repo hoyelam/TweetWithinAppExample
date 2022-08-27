@@ -8,9 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = ContentViewModel(
+        tweetService: TweetService()
+    )
+    
     var body: some View {
-        Text("Hello, world!")
+        VStack(alignment: .leading) {
+            Text("My tweet drafter")
+                .font(.title)
+            
+            TextField(
+                "Type your amazing non-toxic tweet",
+                text: $viewModel.text
+            )
             .padding()
+            .background(Color.gray.opacity(0.4))
+            .cornerRadius(16)
+            
+            Button {
+                viewModel.onTapTweet()
+            } label: {
+                Text("Tweet")
+                    .bold()
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.accentColor)
+                    .foregroundColor(.white)
+                    .cornerRadius(16)
+            }
+        }
+        .padding(.horizontal)
     }
 }
 
